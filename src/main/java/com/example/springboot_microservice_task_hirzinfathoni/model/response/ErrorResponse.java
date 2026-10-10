@@ -1,0 +1,17 @@
+package com.example.springboot_microservice_task_hirzinfathoni.model.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class ErrorResponse {
+    String result;
+    String detail;
+    int code;
+    List<String> errors;
+}
